@@ -92,7 +92,8 @@ export default function App() {
         dayPropGetter={dayPropGetter}
         slotPropGetter={handleSlotStyle}
         formats={{ dayFormat: 'dddd', }}
-        timeslots={2}
+        step={60}           // Intervalo de tiempo en minutos (1 hora)
+        timeslots={1}
         min={dayjs().hour(7).minute(0).toDate()}
         max={dayjs().hour(22).minute(0).toDate()}
       />
